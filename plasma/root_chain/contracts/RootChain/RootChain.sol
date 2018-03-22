@@ -256,12 +256,4 @@ contract RootChain {
     {
         return (childChain[blockNumber].root, childChain[blockNumber].created_at);
     }
-
-    function getExit(uint256 priority)
-        public
-        view
-        returns (address, uint256, uint256)
-    {
-        return (exits[priority].owner, exits[priority].amount, exits[priority].priority);
-    }
 }
